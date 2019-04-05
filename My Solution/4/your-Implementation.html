@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>HTML/Javascript Test</title>
+  </head>
+
+  <body>
+    <h2>Your implemetation</h2>
+    <table>
+      <tr>
+        <td>
+          Continent
+        </td>
+        <td>
+          <input id="AF" type="checkbox" value="AF" checked="checked" />Africa
+          <input id="AS" type="checkbox" value="AS" />Asia
+          <input id="EU" type="checkbox" value="EU" />Europe
+          <input id="NA" type="checkbox" value="NA" />North American
+          <br />
+          <input id="OC" type="checkbox" value="OC" />Oceania
+          <input id="SA" type="checkbox" value="SA" />South American
+          <input id="AN" type="checkbox" value="AN" />Anetatika
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Country
+        </td>
+        <td>
+          <select id="country">
+            <option>-- Please Select --</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          City
+        </td>
+        <td>
+          <select id="city">
+            <option>-- Please Select --</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" height="20px">
+          &nbsp;
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <b>Special Notes</b><br />
+          <i
+            >Please leave your comment or any explanation here for any thing
+            that you want to return back to us.</i
+          >
+          <ol>
+            <li></li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <script type="text/javascript" src="service.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        countryService.init();
+        continentService.init();
+      });
+    </script>
+  </body>
+</html>
